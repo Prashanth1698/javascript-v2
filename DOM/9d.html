@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <input placeholder="Name" class="nameInput">
+
+    <button onclick="
+      const inputElement = document.querySelector('.nameInput');
+      document.querySelector('.message')
+        .innerHTML = `Your name is: ${inputElement.value}`;
+    ">Submit</button>
+
+    <p class="message"></p>
+  </body>
+</html>
