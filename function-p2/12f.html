@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="js-button" onclick="updateButton()">Add to cart</button>
+
+    <p class="js-para"></p>
+    <script>
+        let timeoutID;
+        function updateButton(){
+            const button = document.querySelector('.js-para')
+
+                button.innerHTML = 'added..'
+                clearTimeout(timeoutID)
+                timeoutID =  setInterval(function(){
+                button.innerHTML = '';
+            },1000)
+        }
+    </script>
+
+</body>
+</html>
